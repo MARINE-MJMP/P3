@@ -1,0 +1,133 @@
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0px;
+    font-family: Roboto;
+  }
+
+  .head {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 0px 10px 10px -10px #e2dede;
+    padding-top: 10px;
+  }
+
+  #logo {
+    height: 30px;
+  }
+
+  .positionbar {
+    background-color: #e2dede;
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .iconposition {
+    padding-right: 5px;
+  }
+
+  .home {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .hometext1 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+
+  .hometext2 {
+    font-size: large;
+    font-weight: lighter;
+  }
+
+  .explorebtn {
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    background: linear-gradient(#ff79da, #9356dc);
+    margin-bottom: 40px;
+  }
+
+  .fctcard {
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 0 gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .borderrest {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+
+  .blocrest {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .detailrest {
+    height: 30%;
+  }
+
+  .nomrest {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .positionrest {
+    font-size: small;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+
+  #restimg1 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  #restimg2 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  #restimg3 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  #restimg4 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+}
