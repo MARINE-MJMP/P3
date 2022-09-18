@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     height: 50px;
-    box-shadow: 0px 10px 10px -10px #e2dede;
+    box-shadow: 0px 8px 4px 0px rgba(219, 219, 219, 1);
     padding-top: 10px;
   }
 
@@ -17,7 +17,7 @@
   }
 
   #positionbar {
-    background-color: #f2f2f2;
+    background-color: #eaeaea;
     height: 50px;
     margin-top: 5px;
   }
@@ -33,7 +33,7 @@
   }
 
   #home {
-    background-color: whitesmoke;
+    background-color: #f6f6f6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +56,66 @@
     padding: 10px;
     background: linear-gradient(#ff79da, #9356dc);
     margin-bottom: 40px;
+  }
+
+  .fcttitre {
+    padding-left: 15px;
+  }
+  .fctcard {
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0 gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: #f6f6f6;
+  }
+
+  .violetcard {
+    background: #f5edff;
+  }
+
+  .fctflex {
+    display: flex;
+    align-items: center;
+  }
+
+  .fctnumb {
+    border-radius: 15px;
+    background: #9356dc;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: -15px;
+  }
+
+  .fcticon {
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .iconlist {
+    font-size: larger;
+    color: dimgray;
+  }
+
+  .iconshop {
+    font-size: larger;
+    color: #9356dc;
+  }
+
+  .iconmobile {
+    font-size: larger;
+    color: dimgray;
+  }
+
+  .fcttext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .borderrest {
@@ -82,6 +142,7 @@
     height: 30%;
     margin-bottom: 5px;
   }
+
   .positionheart {
     display: flex;
     align-items: center;
@@ -133,5 +194,162 @@
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
+  }
+
+  .blocfooter {
+    background: #353535;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  .footertitre {
+    font-family: shrikhand, cursive;
+    font-weight: initial;
+    color: white;
+    font-size: smaller;
+  }
+
+  .forkicon {
+    height: 10px;
+  }
+
+  .handshakeicon {
+    height: 10px;
+  }
+  .pfooterhandshake {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    height: 15px;
+  }
+  .handshakeicon {
+    font-size: 11px;
+  }
+  .pfooterfork {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    height: 24px;
+  }
+
+  .forkicon {
+    font-size: 11px;
+  }
+
+  .pfooter3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 4px;
+  }
+
+  .pfooter4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  /* MENU 1 */
+
+  #head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 60px;
+  }
+
+  .arrow {
+    height: 15px;
+    width: 15px;
+  }
+
+  #frenchimg {
+    height: 200px;
+    width: 100%;
+  }
+
+  .titreblocmenu1 {
+    font-family: shrikhand, cursive;
+    font-weight: unset;
+  }
+  .entrées {
+    font-size: medium;
+    font-weight: normal;
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+    line-height: 2;
+  }
+
+  .flexheart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grosbloc {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    position: relative;
+  }
+
+  .iconheartmenu {
+    font-size: 25px;
+  }
+
+  .cardmenu {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .titreplat {
+    font-size: 15px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+
+  .flexdetail {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .detailplat {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+
+  .prix {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+  }
+
+  .cmdbtn {
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(#ff79da, #9356dc);
+    width: min-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 40px auto;
   }
 }

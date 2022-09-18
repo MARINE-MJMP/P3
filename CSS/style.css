@@ -50,13 +50,49 @@
     margin-bottom: 40px;
   }
   .fctcard {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
+    padding: 2%;
+    border-radius: 25px;
     box-shadow: 5px 5px 5px 0 gray;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
+    background: #f2f2f2;
+  }
+  .fctflex {
+    display: flex;
+    align-items: center;
+  }
+  .fctnumb {
+    border-radius: 15px;
+    background: pink;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: -15px;
+  }
+  .fcticon {
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+  .iconlist {
+    font-size: larger;
+    color: dimgray;
+  }
+  .iconshop {
+    font-size: larger;
+    color: dimgray;
+  }
+  .iconmobile {
+    font-size: larger;
+    color: dimgray;
+  }
+  .fcttext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .borderrest {
     height: 200px;
@@ -66,6 +102,7 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     background-color: white;
   }
   .blocrest {
@@ -77,14 +114,26 @@
   }
   .detailrest {
     height: 30%;
+    margin-bottom: 5px;
+  }
+  .positionheart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .heartsize {
+    font-size: x-large;
+    padding-right: 15px;
+    padding-top: 15px;
   }
   .nomrest {
+    font-size: medium;
     margin-top: 15px;
     margin-bottom: 5px;
     padding-left: 10px;
   }
   .positionrest {
-    font-size: small;
+    font-size: medium;
     margin-top: 0px;
     padding-left: 10px;
   }

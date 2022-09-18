@@ -5,15 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
     <!-- language -->
-    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="SASS/main.scss" />
     <!-- lien vers fichier CSS -->
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&family=Shrikhand&display=swap" rel="stylesheet">
 
     <script
       src="https://kit.fontawesome.com/bcc8bb7879.js"
@@ -52,29 +49,38 @@
     </section>
 
     <section>
-      <h2>Fonctionnement</h2>
+      <h2 class="fcttitre">Fonctionnement</h2>
 
       <div class="fctcard">
         <div class="fctflex">
-        <div class="fctnumb"><p>1</p></div>
+        <div class="fctnumb">1</div>
         <div class="fcticon">
-          <i class="fa-solid fa-mobile-screen-button"></i>
+          <i class="fa-solid fa-mobile-screen-button iconmobile"></i>
         </div>
         <h3 class="fcttext">Choisissez un restaurant</h3>
       </div>
       </div>
 
       <div class="fctcard">
+        <div class="fctflex">
         <div class="fctnumb">2</div>
-        <div class="fcticon"><i class="fa-solid fa-list-ul"></i></div>
+        <div class="fcticon">
+          <i class="fa-solid fa-list-ul iconlist"></i>
+        </div>
         <h3 class="fcttext">Composez votre menu</h3>
       </div>
+      </div>
 
-      <div class="fctcard">
+      <div class="fctcard violetcard">
+        <div class="fctflex">
         <div class="fctnumb">3</div>
-        <div class="fcticon"><i class="fa-solid fa-store"></i></div>
+        <div class="fcticon">
+          <i class="fa-solid fa-store iconshop"></i>
+        </div>
         <h3 class="fcttext">Dégustez au restaurant</h3>
       </div>
+      </div>
+
     </section>
 
     <section class="blocrest">
@@ -155,6 +161,38 @@
           <p class="positionrest">Folie-Méricourt</p>
         </div>
       </div>
+    </section>
+
+    <section>
+ <div class="blocfooter">
+    
+
+  <h3 class="footertitre">Ohmyfood</h3>
+
+     
+      <div class="pfooterfork">
+      <i class="fa-solid fa-utensils forkicon"></i>
+      <p>Proposer un restaurant</p>
+      </div>
+
+    
+      <div class="pfooterhandshake">
+      <i class="fa-solid fa-handshake-angle handshakeicon"></i>
+      <p>Devenir partenaire</p>
+      </div>
+
+      <p class="pfooter3">Mentions légales</p>
+
+      <p class="pfooter4">Contact</p>
+
+      </div>
+
+
+
+
+
+
+
     </section>
   </body>
 </html>
