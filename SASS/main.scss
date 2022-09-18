@@ -4,7 +4,7 @@
     font-family: Roboto;
   }
 
-  .head {
+  #head {
     display: flex;
     justify-content: center;
     height: 50px;
@@ -12,12 +12,12 @@
     padding-top: 10px;
   }
 
-  #logo {
+  .logo {
     height: 30px;
   }
 
-  .positionbar {
-    background-color: #e2dede;
+  #positionbar {
+    background-color: #f2f2f2;
     height: 50px;
     margin-top: 5px;
   }
@@ -32,7 +32,7 @@
     padding-right: 5px;
   }
 
-  .home {
+  #home {
     background-color: whitesmoke;
     display: flex;
     align-items: center;
@@ -58,16 +58,6 @@
     margin-bottom: 40px;
   }
 
-  .fctcard {
-    display: flex;
-    align-items: center;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px 0 gray;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-  }
-
   .borderrest {
     height: 200px;
     width: 100%;
@@ -76,6 +66,7 @@
     border-radius: 15px;
     box-shadow: 5px 5px 5px 5px #f2f2f2;
     margin-bottom: 20px;
+    padding-bottom: 10px;
     background-color: white;
   }
 
@@ -89,16 +80,29 @@
 
   .detailrest {
     height: 30%;
+    margin-bottom: 5px;
+  }
+  .positionheart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .heartsize {
+    font-size: x-large;
+    padding-right: 15px;
+    padding-top: 15px;
   }
 
   .nomrest {
+    font-size: medium;
     margin-top: 15px;
     margin-bottom: 5px;
     padding-left: 10px;
   }
 
   .positionrest {
-    font-size: small;
+    font-size: medium;
     margin-top: 0px;
     padding-left: 10px;
   }
