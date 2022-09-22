@@ -1,17 +1,493 @@
-/* Error: expected ")".
- *     ,
- * 357 | @media screen and (min-width: 768px) and (max: width 1200px;) {
- *     |                                                            ^
- *     '
- *   sass/main.scss 357:60  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ")".\a     \2577 \a 357 \2502  @media screen and (min-width: 768px) and (max: width 1200px;) {\a     \2502                                                             ^\a     \2575 \a   sass/main.scss 357:60  root stylesheet';
+@charset "UTF-8";
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0px;
+    font-family: Roboto;
+  }
+  #head {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 0px 8px 4px 0px rgb(219, 219, 219);
+    padding-top: 10px;
+  }
+  #head .logo {
+    height: 30px;
+  }
+  #positionbar {
+    background-color: #eaeaea;
+    height: 50px;
+    margin-top: 5px;
+  }
+  #positionbar .position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #positionbar .iconposition {
+    padding-right: 5px;
+  }
+  #home {
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  #home .hometext1 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+  }
+  #home .hometext2 {
+    font-size: large;
+    font-weight: lighter;
+  }
+  #home .explorebtn {
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    background: linear-gradient(#ff79da, #9356dc);
+    margin-bottom: 40px;
+  }
+  .fcttitre {
+    padding-left: 15px;
+  }
+  .fctcard {
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0 gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: #f6f6f6;
+  }
+  .fctcard .fctflex {
+    display: flex;
+    align-items: center;
+  }
+  .fctcard .fctnumb {
+    border-radius: 15px;
+    background: #9356dc;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-left: -15px;
+  }
+  .fctcard .fcticon {
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+  .fctcard .iconlist {
+    font-size: larger;
+    color: dimgray;
+  }
+  .fctcard .iconshop {
+    font-size: larger;
+    color: #9356dc;
+  }
+  .fctcard .iconmobile {
+    font-size: larger;
+    color: dimgray;
+  }
+  .fctcard .fcttext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .blocrest {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .blocrest .borderrest {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px 5px #f2f2f2;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    background-color: white;
+  }
+  .blocrest .detailrest {
+    height: 30%;
+    margin-bottom: 5px;
+  }
+  .blocrest .positionheart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .blocrest .heartsize {
+    font-size: x-large;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .blocrest .nomrest {
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  .blocrest .positionrest {
+    font-size: medium;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .blocrest #restimg1 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .blocrest #restimg2 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .blocrest #restimg3 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .blocrest #restimg4 {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .blocfooter {
+    background: #353535;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  .blocfooter .footertitre {
+    font-family: shrikhand, cursive;
+    font-weight: initial;
+    color: white;
+    font-size: smaller;
+  }
+  .blocfooter .forkicon {
+    height: 10px;
+  }
+  .blocfooter .handshakeicon {
+    height: 10px;
+  }
+  .blocfooter .pfooterhandshake {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    height: 15px;
+  }
+  .blocfooter .handshakeicon {
+    font-size: 11px;
+  }
+  .blocfooter .pfooterfork {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    height: 24px;
+  }
+  .blocfooter .forkicon {
+    font-size: 11px;
+  }
+  .blocfooter .pfooter3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 4px;
+  }
+  .blocfooter .pfooter4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+  /* MENU 1 */
+  #head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 60px;
+  }
+  .arrow {
+    height: 15px;
+    width: 15px;
+  }
+  #frenchimg {
+    height: 200px;
+    width: 100%;
+  }
+  .titreblocmenu1 {
+    font-family: shrikhand, cursive;
+    font-weight: unset;
+  }
+  .entrées {
+    font-size: medium;
+    font-weight: normal;
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+    line-height: 2;
+  }
+  .flexheart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .grosbloc {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    margin-top: -20px;
+    position: relative;
+  }
+  .iconheartmenu {
+    font-size: 25px;
+  }
+  .cardmenu {
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .titreplat {
+    font-size: 15px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+  .flexdetail {
+    display: flex;
+    justify-content: space-between;
+  }
+  .detailplat {
+    font-size: 12px;
+    font-weight: normal;
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+  .prix {
+    font-size: 12px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-right: 5px;
+  }
+  .cmdbtn {
+    color: white;
+    border-radius: 30px;
+    background: linear-gradient(#ff79da, #9356dc);
+    width: min-content;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin: 40px auto;
+  }
 }
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  #head {
+    display: flex;
+    justify-content: center;
+  }
+  .logo {
+    height: 50px;
+  }
+  #positionbar {
+    height: 50px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+  }
+  .position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ff79da, #9356dc);
+    padding: 15px;
+  }
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hometext1 {
+    margin-bottom: 0px;
+  }
+  .hometext2 {
+    font-size: large;
+  }
+  .explorebtn {
+    border-bottom: 1px solid;
+    color: #9356dc;
+    font-size: x-large;
+  }
+  .fcttitre {
+    padding-left: 10px;
+  }
+  .aligncard {
+    display: flex;
+    justify-content: space-around;
+  }
+  .fctflex {
+    display: flex;
+    align-items: center;
+  }
+  .fctnumb {
+    border-radius: 15px;
+    background-color: #9356dc;
+    color: white;
+    height: 20px;
+    width: 20px;
+    margin: 5px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fcticon {
+    margin: 5px;
+    font-size: 17px;
+  }
+  .fcttext {
+    margin: 5px;
+  }
+  .resttitre {
+    padding-left: 15px;
+  }
+  .blocrest {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .restcolumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .borderrest {
+    border-radius: 15px;
+    background-color: #f6f6f6;
+    margin: 20px;
+    height: 300px;
+    width: 300px;
+  }
+  #restimg1 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    object-fit: cover;
+  }
+  #restimg2 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    object-fit: cover;
+  }
+  #restimg3 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    object-fit: cover;
+  }
+  #restimg4 {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    height: 70%;
+    object-fit: cover;
+  }
+  .detailrest {
+    height: 30%;
+    margin-bottom: 5px;
+  }
+  .positionheart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .heartsize {
+    font-size: x-large;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .nomrest {
+    font-size: medium;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+  .positionrest {
+    font-size: medium;
+    margin-top: 0px;
+    padding-left: 10px;
+  }
+  .blocfooter {
+    background: #353535;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footertitre {
+    font-family: shrikhand, cursive;
+    font-weight: initial;
+    color: white;
+    font-size: large;
+  }
+  .forkicon {
+    height: 10px;
+  }
+  .handshakeicon {
+    height: 10px;
+  }
+  .pfooterhandshake {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .handshakeicon {
+    font-size: 11px;
+  }
+  .pfooterfork {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .forkicon {
+    font-size: 11px;
+  }
+  .pfooter3 {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .pfooter4 {
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
