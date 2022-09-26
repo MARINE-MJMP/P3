@@ -79,6 +79,11 @@ $blackfooter: #353535;
     margin-bottom: 20px;
     background: #f6f6f6;
 
+    &:hover {
+      cursor: pointer;
+      background: $lightpurple;
+    }
+
     .fctflex {
       display: flex;
       align-items: center;
@@ -130,8 +135,27 @@ $blackfooter: #353535;
     padding-left: 20px;
     padding-right: 20px;
 
+    .new {
+      background: #99e2d0;
+      height: 35px;
+      width: 90px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #37a88c;
+      font-weight: bold;
+      position: absolute;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+
+    .flexnew {
+      display: flex;
+      justify-content: right;
+    }
+
     .borderrest {
-      height: 200px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -142,9 +166,10 @@ $blackfooter: #353535;
       background-color: white;
     }
 
-    .detailrest {
-      height: 30%;
-      margin-bottom: 5px;
+    .flexdetail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
     .positionheart {
@@ -154,9 +179,8 @@ $blackfooter: #353535;
     }
 
     .heartsize {
-      font-size: x-large;
       padding-right: 15px;
-      padding-top: 15px;
+      font-size: x-large;
     }
 
     .nomrest {
@@ -167,34 +191,33 @@ $blackfooter: #353535;
     }
 
     .positionrest {
-      font-size: medium;
       margin-top: 0px;
       padding-left: 10px;
     }
 
     #restimg1 {
-      height: 70%;
+      height: 160px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
     }
 
     #restimg2 {
-      height: 70%;
+      height: 160px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
     }
 
     #restimg3 {
-      height: 70%;
+      height: 160px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
     }
 
     #restimg4 {
-      height: 70%;
+      height: 160px;
       width: 100%;
       object-fit: cover;
       border-radius: 15px 15px 0 0;
@@ -216,41 +239,41 @@ $blackfooter: #353535;
     }
 
     .forkicon {
-      height: 10px;
+      font-size: 14px;
     }
 
     .handshakeicon {
-      height: 10px;
+      font-size: 14px;
     }
     .pfooterhandshake {
       color: white;
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 12px;
+      font-size: 15px;
       height: 15px;
     }
     .handshakeicon {
-      font-size: 11px;
+      font-size: 14px;
     }
     .pfooterfork {
       color: white;
       display: flex;
       align-items: center;
       gap: 5px;
-      font-size: 12px;
+      font-size: 15px;
       height: 24px;
     }
 
     .forkicon {
-      font-size: 11px;
+      font-size: 14px;
     }
 
     .pfooter3 {
       color: white;
       display: flex;
       align-items: center;
-      font-size: 12px;
+      font-size: 15px;
       line-height: 4px;
     }
 
@@ -258,45 +281,24 @@ $blackfooter: #353535;
       color: white;
       display: flex;
       align-items: center;
-      font-size: 12px;
+      font-size: 15px;
+      text-decoration: none;
     }
   }
+}
 
-  /* MENU 1 */
-
+/* MENU 1 */
+@media screen and (max-width: 767px) {
   #head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-right: 60px;
-  }
-
-  .arrow {
-    height: 15px;
-    width: 15px;
+    .arrow {
+      height: 15px;
+      width: 15px;
+    }
   }
 
   #frenchimg {
     height: 200px;
     width: 100%;
-  }
-
-  .titreblocmenu1 {
-    font-family: shrikhand, cursive;
-    font-weight: unset;
-  }
-  .entrées {
-    font-size: medium;
-    font-weight: normal;
-    border-bottom: solid 3px #99e2d0;
-    width: 40px;
-    line-height: 2;
-  }
-
-  .flexheart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
 
   .grosbloc {
@@ -307,10 +309,32 @@ $blackfooter: #353535;
     padding-bottom: 30px;
     margin-top: -20px;
     position: relative;
+
+    .flexheart {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .titreblocmenu1 {
+      font-family: shrikhand, cursive;
+      font-weight: unset;
+      font-size: 30px;
+      margin-bottom: 0px;
+    }
+
+    .iconheartmenu {
+      font-size: 25px;
+      margin-top: 20px;
+    }
   }
 
-  .iconheartmenu {
-    font-size: 25px;
+  .entrées {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+    line-height: 2;
   }
 
   .cardmenu {
@@ -319,38 +343,38 @@ $blackfooter: #353535;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
-  }
 
-  .titreplat {
-    font-size: 15px;
-    padding-top: 0px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
+    .titreplat {
+      font-size: 18px;
+      padding-top: 0px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+    }
 
-  .flexdetail {
-    display: flex;
-    justify-content: space-between;
-  }
+    .flexdetail {
+      display: flex;
+      justify-content: space-between;
+    }
 
-  .detailplat {
-    font-size: 12px;
-    font-weight: normal;
-    margin-top: 5px;
-    margin-bottom: 0px;
-  }
+    .detailplat {
+      font-size: 15px;
+      font-weight: normal;
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
 
-  .prix {
-    font-size: 12px;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding-right: 5px;
+    .prix {
+      font-size: 12px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      padding-right: 5px;
+    }
   }
 
   .cmdbtn {
     color: white;
     border-radius: 30px;
-    background: linear-gradient(#ff79da, #9356dc);
+    background: linear-gradient($pink, $purple);
     width: min-content;
     padding-top: 15px;
     padding-bottom: 15px;

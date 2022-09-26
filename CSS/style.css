@@ -62,6 +62,10 @@
     margin-bottom: 20px;
     background: #f6f6f6;
   }
+  .fctcard:hover {
+    cursor: pointer;
+    background: #f5edff;
+  }
   .fctcard .fctflex {
     display: flex;
     align-items: center;
@@ -105,8 +109,25 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .blocrest .new {
+    background: #99e2d0;
+    height: 35px;
+    width: 90px;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #37a88c;
+    font-weight: bold;
+    position: absolute;
+    margin-top: 10px;
+    margin-right: 10px;
+  }
+  .blocrest .flexnew {
+    display: flex;
+    justify-content: right;
+  }
   .blocrest .borderrest {
-    height: 200px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -116,9 +137,10 @@
     padding-bottom: 10px;
     background-color: white;
   }
-  .blocrest .detailrest {
-    height: 30%;
-    margin-bottom: 5px;
+  .blocrest .flexdetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .blocrest .positionheart {
     display: flex;
@@ -126,9 +148,8 @@
     justify-content: space-between;
   }
   .blocrest .heartsize {
-    font-size: x-large;
     padding-right: 15px;
-    padding-top: 15px;
+    font-size: x-large;
   }
   .blocrest .nomrest {
     font-size: medium;
@@ -137,30 +158,29 @@
     padding-left: 10px;
   }
   .blocrest .positionrest {
-    font-size: medium;
     margin-top: 0px;
     padding-left: 10px;
   }
   .blocrest #restimg1 {
-    height: 70%;
+    height: 160px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
   .blocrest #restimg2 {
-    height: 70%;
+    height: 160px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
   .blocrest #restimg3 {
-    height: 70%;
+    height: 160px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
   }
   .blocrest #restimg4 {
-    height: 70%;
+    height: 160px;
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0 0;
@@ -179,76 +199,57 @@
     font-size: smaller;
   }
   .blocfooter .forkicon {
-    height: 10px;
+    font-size: 14px;
   }
   .blocfooter .handshakeicon {
-    height: 10px;
+    font-size: 14px;
   }
   .blocfooter .pfooterhandshake {
     color: white;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 12px;
+    font-size: 15px;
     height: 15px;
   }
   .blocfooter .handshakeicon {
-    font-size: 11px;
+    font-size: 14px;
   }
   .blocfooter .pfooterfork {
     color: white;
     display: flex;
     align-items: center;
     gap: 5px;
-    font-size: 12px;
+    font-size: 15px;
     height: 24px;
   }
   .blocfooter .forkicon {
-    font-size: 11px;
+    font-size: 14px;
   }
   .blocfooter .pfooter3 {
     color: white;
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 4px;
   }
   .blocfooter .pfooter4 {
     color: white;
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
+    text-decoration: none;
   }
-  /* MENU 1 */
-  #head {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding-right: 60px;
-  }
-  .arrow {
+}
+/* MENU 1 */
+@media screen and (max-width: 767px) {
+  #head .arrow {
     height: 15px;
     width: 15px;
   }
   #frenchimg {
     height: 200px;
     width: 100%;
-  }
-  .titreblocmenu1 {
-    font-family: shrikhand, cursive;
-    font-weight: unset;
-  }
-  .entrées {
-    font-size: medium;
-    font-weight: normal;
-    border-bottom: solid 3px #99e2d0;
-    width: 40px;
-    line-height: 2;
-  }
-  .flexheart {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
   .grosbloc {
     background: whitesmoke;
@@ -259,8 +260,27 @@
     margin-top: -20px;
     position: relative;
   }
-  .iconheartmenu {
+  .grosbloc .flexheart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .grosbloc .titreblocmenu1 {
+    font-family: shrikhand, cursive;
+    font-weight: unset;
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .grosbloc .iconheartmenu {
     font-size: 25px;
+    margin-top: 20px;
+  }
+  .entrées {
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: solid 3px #99e2d0;
+    width: 40px;
+    line-height: 2;
   }
   .cardmenu {
     background-color: white;
@@ -269,23 +289,23 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-  .titreplat {
-    font-size: 15px;
+  .cardmenu .titreplat {
+    font-size: 18px;
     padding-top: 0px;
     margin-bottom: 0px;
     margin-top: 0px;
   }
-  .flexdetail {
+  .cardmenu .flexdetail {
     display: flex;
     justify-content: space-between;
   }
-  .detailplat {
-    font-size: 12px;
+  .cardmenu .detailplat {
+    font-size: 15px;
     font-weight: normal;
     margin-top: 5px;
     margin-bottom: 0px;
   }
-  .prix {
+  .cardmenu .prix {
     font-size: 12px;
     margin-bottom: 5px;
     margin-top: 5px;
