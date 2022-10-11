@@ -108,6 +108,7 @@ $blackfooter: #353535;
     &:hover {
       opacity: 0.7;
       box-shadow: 13px 10px 16px 0px rgba(0, 0, 0, 0.75);
+      cursor: pointer;
     }
   }
 }
@@ -155,16 +156,25 @@ $blackfooter: #353535;
   .iconlist {
     font-size: larger;
     color: dimgray;
+    &:hover {
+      color: $purple;
+    }
   }
 
   .iconshop {
     font-size: larger;
     color: dimgray;
+    &:hover {
+      color: $purple;
+    }
   }
 
   .iconmobile {
     font-size: larger;
     color: dimgray;
+    &:hover {
+      color: $purple;
+    }
   }
 
   .fcttext {
@@ -243,50 +253,52 @@ $blackfooter: #353535;
     opacity: 0;
     &:hover {
       opacity: 0.9;
-      color: $pink;
       transition: opacity 0.5s ease-in-out;
+      background: -webkit-linear-gradient($purple, $pink);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
+}
 
-  .nomrest {
-    font-size: medium;
-    margin-top: 15px;
-    margin-bottom: 5px;
-    padding-left: 10px;
-  }
+.nomrest {
+  font-size: medium;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
 
-  .positionrest {
-    margin-top: 0px;
-    padding-left: 10px;
-  }
+.positionrest {
+  margin-top: 0px;
+  padding-left: 10px;
+}
 
-  #restimg1 {
-    height: 160px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
+#restimg1 {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-  #restimg2 {
-    height: 160px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
+#restimg2 {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-  #restimg3 {
-    height: 160px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
+#restimg3 {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-  #restimg4 {
-    height: 160px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
+#restimg4 {
+  height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
 }
 
 .blocfooter {
@@ -412,13 +424,61 @@ $blackfooter: #353535;
       line-height: 2;
     }
 
-    .cardmenu {
+    .cardmenuentrée {
       background-color: white;
       border-radius: 15px;
       margin-top: 10px;
       margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
+      animation: appear1 500ms 1000ms linear both;
+    }
+
+    .cardmenuplat {
+      background-color: white;
+      border-radius: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      animation: appear2 1000ms 1500ms linear both;
+    }
+
+    .cardmenudessert {
+      background-color: white;
+      border-radius: 15px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      animation: appear3 1500ms 2000ms linear both;
+    }
+
+    @keyframes appear1 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes appear2 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes appear3 {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
     .menuselect {
       background: #99e2d0;
@@ -432,13 +492,22 @@ $blackfooter: #353535;
       justify-content: center;
       transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
         opacity 0.4s ease-in-out;
-      color: white;
-      font-size: larger;
       &:hover {
         opacity: 100%;
-        width: 5rem;
+        width: 10rem;
       }
     }
+
+    .rotatecircle {
+      color: white;
+      font-size: 2rem;
+
+      &:hover {
+        transition: 0.9s;
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
     .titreplat {
       overflow: hidden;
       white-space: nowrap;
@@ -455,8 +524,14 @@ $blackfooter: #353535;
       justify-content: space-between;
       flex-direction: column;
       flex: 1;
+      width: 70%;
+      overflow: hidden;
     }
-
+    .flexprixselect {
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+    }
     .detailplat {
       overflow: hidden;
       white-space: nowrap;
@@ -492,6 +567,7 @@ $blackfooter: #353535;
       &:hover {
         opacity: 0.7;
         box-shadow: 13px 10px 16px 0px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
       }
     }
 
