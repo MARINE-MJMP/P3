@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media screen and (max-width: 767px) {
   body {
     margin: 0px;
@@ -115,6 +114,15 @@
   cursor: pointer;
   background: #f5edff;
 }
+.fctcard:hover .iconlist {
+  color: #9356dc;
+}
+.fctcard:hover .iconshop {
+  color: #9356dc;
+}
+.fctcard:hover .iconmobile {
+  color: #9356dc;
+}
 .fctcard .fctflex {
   display: flex;
   align-items: center;
@@ -138,22 +146,13 @@
   font-size: larger;
   color: dimgray;
 }
-.fctcard .iconlist:hover {
-  color: #9356dc;
-}
 .fctcard .iconshop {
   font-size: larger;
   color: dimgray;
 }
-.fctcard .iconshop:hover {
-  color: #9356dc;
-}
 .fctcard .iconmobile {
   font-size: larger;
   color: dimgray;
-}
-.fctcard .iconmobile:hover {
-  color: #9356dc;
 }
 .fctcard .fcttext {
   display: flex;
@@ -217,14 +216,15 @@
 }
 .blocrest .heartabsolute {
   position: absolute;
+  background-color: white;
+  transition: opacity 1000ms ease-in-out;
+}
+.blocrest .heartabsolute:hover {
+  opacity: 0;
+  cursor: pointer;
 }
 .blocrest .heartopacity {
-  opacity: 0;
-}
-.blocrest .heartopacity:hover {
-  opacity: 0.9;
-  transition: opacity 0.5s ease-in-out;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#ff79da, #9356dc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -295,6 +295,7 @@
   gap: 5px;
   font-size: 15px;
   height: 15px;
+  cursor: pointer;
 }
 .blocfooter .handshakeicon {
   font-size: 14px;
@@ -306,6 +307,7 @@
   gap: 5px;
   font-size: 15px;
   height: 24px;
+  cursor: pointer;
 }
 .blocfooter .forkicon {
   font-size: 14px;
@@ -316,6 +318,7 @@
   align-items: center;
   font-size: 15px;
   line-height: 4px;
+  cursor: pointer;
 }
 .blocfooter .pfooter4 {
   color: white;
@@ -323,6 +326,7 @@
   align-items: center;
   font-size: 15px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 /* MENU 1 */
@@ -331,19 +335,29 @@
     padding-top: 20px;
   }
   #head .arrow {
-    height: 15px;
-    width: 15px;
     position: absolute;
     left: 15px;
-    top: 25px;
-    color: blacks;
+    top: 21px;
+    color: black;
+    font-size: 23px;
   }
   #frenchimg {
-    height: 200px;
+    height: 300px;
     width: 100%;
+    object-fit: cover;
   }
   #enchantimg {
-    height: 200px;
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #deliceimg {
+    height: 230px;
+    width: 100%;
+    object-fit: cover;
+  }
+  #paletteimg {
+    height: 330px;
     width: 100%;
     object-fit: cover;
   }
@@ -361,6 +375,30 @@
     justify-content: space-between;
     align-items: center;
   }
+  .grosbloc .positionheart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grosbloc .heartsize {
+    padding-right: 15px;
+    padding-top: 30px;
+    font-size: 30px;
+  }
+  .grosbloc .heartabsolute {
+    position: absolute;
+    background-color: #f6f6f6;
+    transition: opacity 1000ms ease-in-out;
+  }
+  .grosbloc .heartabsolute:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
+  .grosbloc .heartopacity {
+    background: linear-gradient(#ff79da, #9356dc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
   .grosbloc .titreblocmenu1 {
     font-family: shrikhand, cursive;
     font-weight: unset;
@@ -371,14 +409,14 @@
     font-size: 25px;
     margin-top: 20px;
   }
-  .grosbloc .entrées {
+  .grosbloc .entrees {
     font-size: 20px;
     font-weight: normal;
     border-bottom: solid 3px #99e2d0;
     width: 40px;
     line-height: 2;
   }
-  .grosbloc .cardmenuentrée {
+  .grosbloc .cardmenuentree {
     background-color: white;
     border-radius: 15px;
     margin-top: 10px;
@@ -386,6 +424,15 @@
     display: flex;
     justify-content: space-between;
     animation: appear1 500ms 1000ms linear both;
+    cursor: pointer;
+  }
+  .grosbloc .cardmenuentree:hover .menuselect {
+    opacity: 100%;
+    width: 10rem;
+  }
+  .grosbloc .cardmenuentree:hover .menuselect i {
+    transform: rotate(359deg);
+    transition: transform 700ms;
   }
   .grosbloc .cardmenuplat {
     background-color: white;
@@ -395,6 +442,15 @@
     display: flex;
     justify-content: space-between;
     animation: appear2 1000ms 1500ms linear both;
+    cursor: pointer;
+  }
+  .grosbloc .cardmenuplat:hover .menuselect {
+    opacity: 100%;
+    width: 10rem;
+  }
+  .grosbloc .cardmenuplat:hover .menuselect i {
+    transform: rotate(359deg);
+    transition: transform 700ms;
   }
   .grosbloc .cardmenudessert {
     background-color: white;
@@ -404,6 +460,23 @@
     display: flex;
     justify-content: space-between;
     animation: appear3 1500ms 2000ms linear both;
+    cursor: pointer;
+  }
+  .grosbloc .cardmenudessert:hover .menuselect {
+    opacity: 100%;
+    width: 10rem;
+  }
+  .grosbloc .cardmenudessert:hover .menuselect i {
+    transform: rotate(359deg);
+    transition: transform 700ms;
+  }
+  @keyframes rotatecircle {
+    0% {
+      transform: 0deg;
+    }
+    100% {
+      transform: 360deg;
+    }
   }
   @keyframes appear1 {
     0% {
@@ -441,17 +514,9 @@
     justify-content: center;
     transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
-  .grosbloc .menuselect:hover {
-    opacity: 100%;
-    width: 10rem;
-  }
-  .grosbloc .rotatecircle {
+  .grosbloc .menuselect i {
     color: white;
     font-size: 2rem;
-  }
-  .grosbloc .rotatecircle:hover {
-    transition: 0.9s;
-    -webkit-transform: rotate(360deg);
   }
   .grosbloc .titreplat {
     overflow: hidden;
@@ -467,7 +532,6 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    flex: 1;
     width: 70%;
     overflow: hidden;
   }
@@ -514,54 +578,54 @@
   }
 }
 @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 1200px) {
-  .grosbloc #head {
+  #head {
     display: flex;
     justify-content: center;
   }
-  .grosbloc .logo {
+  .logo {
     height: 50px;
   }
-  .grosbloc #positionbar {
+  #positionbar {
     height: 50px;
     margin-top: 5px;
     display: flex;
     justify-content: center;
   }
-  .grosbloc .position {
+  .position {
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(#ff79da, #9356dc);
     padding: 15px;
   }
-  .grosbloc #home {
+  #home {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .grosbloc .hometext1 {
+  .hometext1 {
     margin-bottom: 0px;
   }
-  .grosbloc .hometext2 {
+  .hometext2 {
     font-size: large;
   }
-  .grosbloc .explorebtn {
+  .explorebtn {
     border-bottom: 1px solid;
     color: #9356dc;
     font-size: x-large;
   }
-  .grosbloc .fcttitre {
+  .fcttitre {
     padding-left: 10px;
   }
-  .grosbloc .aligncard {
+  .aligncard {
     display: flex;
     justify-content: space-around;
   }
-  .grosbloc .fctflex {
+  .fctflex {
     display: flex;
     align-items: center;
   }
-  .grosbloc .fctnumb {
+  .fctnumb {
     border-radius: 15px;
     background-color: #9356dc;
     color: white;
@@ -573,82 +637,82 @@
     align-items: center;
     justify-content: center;
   }
-  .grosbloc .fcticon {
+  .fcticon {
     margin: 5px;
     font-size: 17px;
   }
-  .grosbloc .fcttext {
+  .fcttext {
     margin: 5px;
   }
-  .grosbloc .resttitre {
+  .resttitre {
     padding-left: 15px;
   }
-  .grosbloc .blocrest {
+  .blocrest {
     display: flex;
     justify-content: space-evenly;
   }
-  .grosbloc .restcolumn {
+  .restcolumn {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .grosbloc .borderrest {
+  .borderrest {
     border-radius: 15px;
     background-color: #f6f6f6;
     margin: 20px;
     height: 300px;
     width: 300px;
   }
-  .grosbloc #restimg1 {
+  #restimg1 {
     width: 100%;
     border-radius: 15px 15px 0 0;
     height: 70%;
     object-fit: cover;
   }
-  .grosbloc #restimg2 {
+  #restimg2 {
     width: 100%;
     border-radius: 15px 15px 0 0;
     height: 70%;
     object-fit: cover;
   }
-  .grosbloc #restimg3 {
+  #restimg3 {
     width: 100%;
     border-radius: 15px 15px 0 0;
     height: 70%;
     object-fit: cover;
   }
-  .grosbloc #restimg4 {
+  #restimg4 {
     width: 100%;
     border-radius: 15px 15px 0 0;
     height: 70%;
     object-fit: cover;
   }
-  .grosbloc .detailrest {
+  .detailrest {
     height: 30%;
     margin-bottom: 5px;
   }
-  .grosbloc .positionheart {
+  .positionheart {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  .grosbloc .heartsize {
+  .heartsize {
     font-size: x-large;
     padding-right: 15px;
     padding-top: 15px;
   }
-  .grosbloc .nomrest {
+  .nomrest {
     font-size: medium;
     margin-top: 15px;
     margin-bottom: 5px;
     padding-left: 10px;
   }
-  .grosbloc .positionrest {
+  .positionrest {
     font-size: medium;
     margin-top: 0px;
     padding-left: 10px;
   }
-  .grosbloc .blocfooter {
+  .blocfooter {
     background: #353535;
     padding-left: 20px;
     padding-right: 20px;
@@ -658,45 +722,49 @@
     align-items: center;
     justify-content: space-around;
   }
-  .grosbloc .footertitre {
+  .footertitre {
     font-family: shrikhand, cursive;
     font-weight: initial;
     color: white;
     font-size: large;
   }
-  .grosbloc .forkicon {
+  .forkicon {
     height: 10px;
   }
-  .grosbloc .handshakeicon {
+  .handshakeicon {
     height: 10px;
   }
-  .grosbloc .pfooterhandshake {
+  .pfooterhandshake {
     color: white;
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
   }
-  .grosbloc .handshakeicon {
+  .handshakeicon {
     font-size: 11px;
   }
-  .grosbloc .pfooterfork {
+  .pfooterfork {
     color: white;
     display: flex;
     align-items: center;
     gap: 5px;
+    cursor: pointer;
   }
-  .grosbloc .forkicon {
+  .forkicon {
     font-size: 11px;
   }
-  .grosbloc .pfooter3 {
+  .pfooter3 {
     color: white;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
-  .grosbloc .pfooter4 {
+  .pfooter4 {
     color: white;
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
 }
 
