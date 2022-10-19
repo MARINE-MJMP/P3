@@ -869,4 +869,122 @@ $blackfooter: #353535;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  #head {
+    height: 100px;
+    align-items: center;
+
+    .logo {
+      height: 50px;
+    }
+  }
+
+  #positionbar {
+    height: 60px;
+    background: linear-gradient($pink, $purple);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    .iconposition {
+      font-size: 19px;
+    }
+
+    .search {
+      font-size: 20px;
+    }
+  }
+
+  #home {
+    background: white;
+  }
+
+  .fct {
+    .aligncard {
+      display: flex;
+    }
+
+    .fctcard {
+      border-radius: 15px;
+      height: 80px;
+      padding: 0%;
+      &:hover {
+        transform: rotate(10deg);
+      }
+    }
+
+    .fctnumb {
+      height: 80px;
+      width: 89px;
+
+      font-size: 20px;
+      border-radius: 15px 0 0 15px;
+    }
+
+    .fcticon {
+      font-size: 20px;
+    }
+  }
+
+  .blocrest {
+    background: white;
+
+    #restimg1 {
+      height: 230px;
+    }
+    #restimg2 {
+      height: 230px;
+    }
+    #restimg3 {
+      height: 230px;
+    }
+    #restimg4 {
+      height: 230px;
+    }
+    .nomrest {
+      font-size: larger;
+    }
+    .positionrest {
+      font-size: large;
+    }
+    .heartsize {
+      font-size: 2rem;
+    }
+  }
+
+  .blocfooter {
+    background: linear-gradient($pink, $purple);
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .footertitre {
+      font-size: large;
+      text-align: center;
+      margin-bottom: 0px;
+    }
+
+    .pfooterfork {
+      font-size: medium;
+      justify-content: center;
+    }
+
+    .pfooterhandshake {
+      font-size: medium;
+      justify-content: center;
+    }
+
+    .pfooter3 {
+      font-size: medium;
+      justify-content: center;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      padding-top: 2px;
+      line-height: 18px;
+    }
+
+    .pfooter4 {
+      font-size: medium;
+      justify-content: center;
+    }
+  }
 }
