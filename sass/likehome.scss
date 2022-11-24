@@ -1,0 +1,23 @@
+.blocrest .positionheart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.blocrest .heartsize {
+  padding-right: 15px;
+  font-size: x-large;
+}
+.blocrest .heartabsolute {
+  position: absolute;
+  background-color: white;
+  transition: opacity 1000ms ease-in-out;
+}
+.blocrest .heartabsolute:hover {
+  opacity: 0;
+  cursor: pointer;
+}
+.blocrest .heartopacity {
+  background: linear-gradient(#ff79da, #9356dc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

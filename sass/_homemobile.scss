@@ -1,0 +1,325 @@
+@media screen and (max-width: 767px) {
+  body {
+    margin: 0px;
+    font-family: Roboto;
+  }
+
+  #head {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 0px 8px 4px 0px rgba(219, 219, 219, 1);
+    padding-top: 10px;
+
+    .logo {
+      height: 30px;
+    }
+  }
+
+  #positionbar {
+    background-color: #eaeaea;
+    height: 50px;
+    margin-top: 2px;
+
+    .position {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .iconposition {
+      padding-right: 5px;
+    }
+  }
+
+  #home {
+    background-color: $lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    .hometext1 {
+      margin-top: 40px;
+      margin-bottom: 0px;
+    }
+
+    .hometext2 {
+      font-size: large;
+      font-weight: lighter;
+    }
+
+    .explorebtn {
+      color: white;
+      border-radius: 30px;
+      padding: 10px;
+      background: linear-gradient($pink, $purple);
+      margin-bottom: 40px;
+      &:hover {
+        opacity: 0.7;
+        box-shadow: 13px 10px 16px 0px rgba(0, 0, 0, 0.75);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fcttitre {
+    padding-left: 15px;
+  }
+
+  .fctcard {
+    padding: 2%;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px 0 gray;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    background: #f6f6f6;
+
+    &:hover {
+      cursor: pointer;
+      background: $lightpurple;
+    }
+
+    &:hover .iconlist {
+      color: $purple;
+    }
+    &:hover .iconshop {
+      color: $purple;
+    }
+    &:hover .iconmobile {
+      color: $purple;
+    }
+
+    .fctflex {
+      display: flex;
+      align-items: center;
+    }
+
+    .fctnumb {
+      border-radius: 15px;
+      background: $purple;
+      height: 22px;
+      width: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      margin-left: -15px;
+    }
+
+    .fcticon {
+      padding-left: 20px;
+      padding-right: 25px;
+    }
+
+    .iconlist {
+      font-size: larger;
+      color: dimgray;
+    }
+
+    .iconshop {
+      font-size: larger;
+      color: dimgray;
+    }
+
+    .iconmobile {
+      font-size: larger;
+      color: dimgray;
+    }
+
+    .fcttext {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .blocrest {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .liencardrest {
+      color: black;
+      text-decoration: none;
+    }
+
+    .new {
+      background: $green;
+      height: 35px;
+      width: 90px;
+      border-radius: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #37a88c;
+      font-weight: bold;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    .flexnew {
+      display: flex;
+      justify-content: right;
+      position: relative;
+    }
+
+    .borderrest {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      border-radius: 15px;
+      box-shadow: 5px 5px 5px 5px #f2f2f2;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      background-color: white;
+    }
+
+    .flexdetail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .positionheart {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .heartsize {
+      padding-right: 15px;
+      font-size: x-large;
+    }
+
+    .heartabsolute {
+      position: absolute;
+      background-color: white;
+      transition: opacity 1000ms ease-in-out;
+      &:hover {
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+
+    .heartopacity {
+      background: linear-gradient($pink, $purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nomrest {
+      font-size: medium;
+      margin-top: 15px;
+      margin-bottom: 5px;
+      padding-left: 10px;
+    }
+
+    .positionrest {
+      margin-top: 0px;
+      padding-left: 10px;
+    }
+
+    #restimg1 {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    #restimg2 {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    #restimg3 {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+
+    #restimg4 {
+      height: 160px;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+  /*FOOTER*/
+
+  .blocfooter {
+    background-color: $blackfooter;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    .footertitre {
+      font-family: shrikhand, cursive;
+      font-weight: initial;
+      color: white;
+      font-size: smaller;
+      text-align: left;
+    }
+
+    .forkicon {
+      font-size: 14px;
+    }
+
+    .handshakeicon {
+      font-size: 14px;
+    }
+    .pfooterhandshake {
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 15px;
+      height: 15px;
+      cursor: pointer;
+    }
+    .handshakeicon {
+      font-size: 14px;
+    }
+    .pfooterfork {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      gap: 5px;
+      height: 24px;
+      cursor: pointer;
+    }
+
+    .forkicon {
+      font-size: 14px;
+    }
+
+    .pfooter3 {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      font-size: 15px;
+      line-height: 4px;
+      cursor: pointer;
+    }
+
+    .pfooter4 {
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      font-size: 15px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}

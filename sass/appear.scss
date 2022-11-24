@@ -1,0 +1,63 @@
+.grosbloc .cardmenuentree {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  animation: appear1 500ms 1000ms linear both;
+  cursor: pointer;
+}
+
+.grosbloc .cardmenuplat {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  animation: appear2 1000ms 1500ms linear both;
+  cursor: pointer;
+}
+
+.grosbloc .cardmenudessert {
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  animation: appear3 1500ms 2000ms linear both;
+  cursor: pointer;
+}
+
+@keyframes appear1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appear3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
