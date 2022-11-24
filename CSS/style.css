@@ -504,7 +504,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
@@ -1121,7 +1122,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
@@ -1735,7 +1737,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+      opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
