@@ -462,7 +462,14 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-
+  @keyframes rotatecircle {
+    0% {
+      transform: 0deg;
+    }
+    100% {
+      transform: 360deg;
+    }
+  }
   @keyframes appear1 {
     0% {
       opacity: 0;
@@ -497,8 +504,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
@@ -1073,7 +1079,14 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-
+  @keyframes rotatecircle {
+    0% {
+      transform: 0deg;
+    }
+    100% {
+      transform: 360deg;
+    }
+  }
   @keyframes appear1 {
     0% {
       opacity: 0;
@@ -1108,8 +1121,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
@@ -1443,13 +1455,13 @@
     margin-bottom: 5px;
   }
   .blocrest .nomrest {
-    font-size: large;
+    font-size: 2rem;
     margin-top: 15px;
     margin-bottom: 5px;
     padding-left: 10px;
   }
   .blocrest .positionrest {
-    font-size: large;
+    font-size: 1.5rem;
     margin-top: 0px;
     padding-left: 10px;
   }
@@ -1681,7 +1693,14 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-
+  @keyframes rotatecircle {
+    0% {
+      transform: 0deg;
+    }
+    100% {
+      transform: 360deg;
+    }
+  }
   @keyframes appear1 {
     0% {
       opacity: 0;
@@ -1716,8 +1735,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
-      opacity 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
   }
   .grosbloc .menuselect i {
     color: white;
@@ -1937,9 +1955,32 @@
     opacity: 1;
   }
 }
+.grosbloc .menuselect {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.grosbloc .menuselect i {
+  color: white;
+  font-size: 2rem;
+}
+
 .grosbloc .cardmenuentree:hover .menuselect i {
   transform: rotate(359deg);
   transition: transform 700ms;
+}
+
+.grosbloc .cardmenuentree:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
 }
 
 .grosbloc .cardmenuplat:hover .menuselect i {
@@ -1947,9 +1988,19 @@
   transition: transform 700ms;
 }
 
+.grosbloc .cardmenuplat:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
+}
+
 .grosbloc .cardmenudessert:hover .menuselect i {
   transform: rotate(359deg);
   transition: transform 700ms;
+}
+
+.grosbloc .cardmenudessert:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
 }
 
 #home .explorebtn {

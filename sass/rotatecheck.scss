@@ -1,6 +1,29 @@
+.grosbloc .menuselect {
+  background: #99e2d0;
+  cursor: pointer;
+  height: auto;
+  width: 0;
+  opacity: 0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease-in-out, width 0.4s ease-in-out,
+    opacity 0.4s ease-in-out;
+}
+.grosbloc .menuselect i {
+  color: white;
+  font-size: 2rem;
+}
+
 .grosbloc .cardmenuentree:hover .menuselect i {
   transform: rotate(359deg);
   transition: transform 700ms;
+}
+
+.grosbloc .cardmenuentree:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
 }
 
 .grosbloc .cardmenuplat:hover .menuselect i {
@@ -8,7 +31,17 @@
   transition: transform 700ms;
 }
 
+.grosbloc .cardmenuplat:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
+}
+
 .grosbloc .cardmenudessert:hover .menuselect i {
   transform: rotate(359deg);
   transition: transform 700ms;
+}
+
+.grosbloc .cardmenudessert:hover .menuselect {
+  opacity: 100%;
+  width: 10rem;
 }
