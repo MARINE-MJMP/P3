@@ -462,14 +462,7 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-  @keyframes rotatecircle {
-    0% {
-      transform: 0deg;
-    }
-    100% {
-      transform: 360deg;
-    }
-  }
+
   @keyframes appear1 {
     0% {
       opacity: 0;
@@ -1080,14 +1073,7 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-  @keyframes rotatecircle {
-    0% {
-      transform: 0deg;
-    }
-    100% {
-      transform: 360deg;
-    }
-  }
+
   @keyframes appear1 {
     0% {
       opacity: 0;
@@ -1695,14 +1681,7 @@
     transform: rotate(359deg);
     transition: transform 700ms;
   }
-  @keyframes rotatecircle {
-    0% {
-      transform: 0deg;
-    }
-    100% {
-      transform: 360deg;
-    }
-  }
+
   @keyframes appear1 {
     0% {
       opacity: 0;
